@@ -1,0 +1,174 @@
+2D Array Multiplication
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[][]={{1,2,3},{4,5,6}};
+		for(int i=0;i<arr.length;i++){
+		    for(int j=0;j<arr[i].length;j++){
+		        arr[i][j] *=2;
+		         System.out.print(arr[i][j]+" ");  
+		        }
+		    }
+		}
+		
+	}
+
+
+
+
+
+
+
+Sum of  two 2D Array
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[][]={{1,2,3},{4,5,6}};
+		int a[][]={{7,8,9},{10,11,12}};
+		int sum[][]=new int[2][3];
+		for(int i=0;i<arr.length && i<a.length;i++){
+		    for(int j=0;j<arr[i].length && j<a[i].length;j++){
+		        sum[i][j]+=(arr[i][j]+a[i][j]);
+		         System.out.print(sum[i][j]+" ");  
+		        }
+		    }
+		}
+		
+	}
+
+
+
+Sum 2D Array
+
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[][]={{1,2,3},{4,5,6}};
+		int sum=0;
+		for(int i=0;i<arr.length;i++){
+		    for(int j=0;j<arr[i].length;j++){
+		        sum+=arr[i][j];
+		        System.out.print(sum+" ");
+		        }
+		        
+		    }
+		}
+		
+	}
+
+
+
+List
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		List<Integer> list=new ArrayList<>();
+		list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(7);
+        list.add(5);
+		int sum=0;
+		int pro=1;
+		System.out.println(list); 
+		for(int i:list){
+		    sum+=i;
+		    pro*=i;
+		  }
+        System.out.println("Sum is "+sum);
+        System.out.println("Product is "+pro);
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Set
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Set<Integer> set=new TreeSet<>();
+		set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(2);
+        set.add(5);
+        set.add(7);
+        set.add(2);
+        set.add(2);
+        set.add(5);
+        set.add(1);
+		System.out.println(set);
+        
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hash Map
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Map<Character,Integer> map=new HashMap<>();
+		map.put('f',7);
+		map.put('a',26);
+		System.out.println(map);
+        
+		}
+		
+	}
+
+
+
+
+
+
+Linked Hash Map
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Map<Character,Integer> map=new LinkedHashMap<>();
+		map.put('f',7);
+		map.put('a',26);
+		System.out.println(map);
+        
+		}
+		
+	}
